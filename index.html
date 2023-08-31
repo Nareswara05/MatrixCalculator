@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Nareswara : Matrix Calculator</title>
+</head>
+<body>
+  <div class="nav-wrapper">
+    <div class="grad-bar"></div>
+    <nav class="navbar">
+      <img src="Wear red and white and show off your Arcadia Knights pride! (1).png" alt="Company Logo">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav no-search">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Contact Us</a></li>
+        <i class="fas fa-search" id="search-icon"></i>
+        <input class="search-input" type="text" placeholder="Search..">
+      </ul>
+    </nav>
+    </div>
+  
+  <div class="buttons">
+    <h1 class="title">Matrix Calculator</h1>
+    <button id="add">Add</button>
+    <button id="subtract">Subtract</button>
+    <button id="multiply">Multiply</button>
+    <button id="resetButton">Clear</button>
+
+  </div>
+  
+  <div class="calculator">
+    <div class="matrixContainer">
+      <div class="matrix-input">
+        <h2>Matrix A</h2>
+        <div class="container">
+          <table>
+            <tbody>
+              <tr>
+                <td><input type="text" class="matrix-cell" id="a00" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="a01" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="a02" maxlength="2"></td>
+              </tr>
+              <tr>
+                <td><input type="text" class="matrix-cell" id="a10" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="a11" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="a12" maxlength="2"></td>
+              </tr>
+              <tr>
+                <td><input type="text" class="matrix-cell" id="a20" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="a21" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="a22" maxlength="2"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="matrix-input">
+        <h2>Matrix B</h2>
+        <div class="container">
+          <table>
+            <tbody>
+              <tr>
+                <td><input type="text" class="matrix-cell" id="b00" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="b01" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="b02"></td>
+              </tr>
+              <tr>
+                <td><input type="text" class="matrix-cell" id="b10" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="b11" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="b12" maxlength="2"></td>
+              </tr>
+              <tr>
+                <td><input type="text" class="matrix-cell" id="b20" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="b21" maxlength="2"></td>
+                <td><input type="text" class="matrix-cell" id="b22" maxlength="2"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div class="matrix-result">
+      <h2>Result</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><input type="text" class="matrix-cell" id="result00" readonly></td>
+            <td><input type="text" class="matrix-cell" id="result01" readonly></td>
+            <td><input type="text" class="matrix-cell" id="result02" readonly></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="matrix-cell" id="result10" readonly></td>
+            <td><input type="text" class="matrix-cell" id="result11" readonly></td>
+            <td><input type="text" class="matrix-cell" id="result12" readonly></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="matrix-cell" id="result20" readonly></td>
+            <td><input type="text" class="matrix-cell" id="result21" readonly></td>
+            <td><input type="text" class="matrix-cell" id="result22" readonly></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
